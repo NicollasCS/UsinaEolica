@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Eólica no Brasil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="horta.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Energia Eólica no Brasil</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#vantagens">Vantagens</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="#estatisticas">Estatísticas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>O Futuro da Energia Renovável</h2>
+            <p>Conheça o potencial e os benefícios da energia eólica no Brasil</p>
+            <a href="#sobre" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre Energia Eólica</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>A energia eólica é obtida a partir da força dos ventos, que movimentam as pás de turbinas conectadas a geradores elétricos. É uma das fontes de energia mais limpas e renováveis disponíveis.</p>
+                    <p>No Brasil, a energia eólica tem crescido significativamente, especialmente no Nordeste, onde os ventos são mais constantes e fortes. Atualmente, o país está entre os 10 maiores produtores de energia eólica do mundo.</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Parque eólico">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vantagens" class="section advantages">
+        <div class="container">
+            <h2>Vantagens da Energia Eólica</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Energia Limpa</h3>
+                    <p>Não emite poluentes ou gases de efeito estufa durante a geração de energia.</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Renovável</h3>
+                    <p>Fonte inesgotável de energia, dependendo apenas da força dos ventos.</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Custo Competitivo</h3>
+                    <p>Preço da energia eólica tem se tornado cada vez mais competitivo no Brasil.</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Geração de Empregos</h3>
+                    <p>Cria oportunidades de trabalho nas regiões onde os parques são instalados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="localizacao" class="section">
+        <div class="container">
+            <h2>Principais Parques Eólicos no Brasil</h2>
+            <div class="map-container">
+                <div id="map"></div>
+                <div class="wind-farms-list">
+                    <h3>Maiores Complexos Eólicos:</h3>
+                    <ul>
+                        <li>Complexo Eólico Rio do Vento (RN)</li>
+                        <li>Complexo Eólico Lagoa dos Ventos (PI)</li>
+                        <li>Complexo Eólico Chapada do Piauí (PI)</li>
+                        <li>Parque Eólico Osório (RS)</li>
+                        <li>Complexo Eólico Alto Sertão (BA)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="estatisticas" class="section statistics">
+        <div class="container">
+            <h2>Estatísticas da Energia Eólica no Brasil</h2>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" id="capacity">20</div>
+                    <div class="stat-label">Capacidade Instalada (GW)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="parks">+750</div>
+                    <div class="stat-label">Parques Eólicos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="turbines">+10.000</div>
+                    <div class="stat-label">Turbinas Instaladas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="percentage">11%</div>
+                    <div class="stat-label">% da Matriz Elétrica</div>
+                </div>
+            </div>
+            <canvas id="windChart"></canvas>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Energia Eólica - Feira de Ciências<br><br>Nicollas, Vitor, Nicole, Fellype</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html>
