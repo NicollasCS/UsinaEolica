@@ -365,3 +365,9 @@ footer p {
         font-size: 2rem;
     }
 }
+
+.fotoparqueeolicobrasileiro{
+    max-width: 95%;
+    border-radius: 30px;
+    border: 4px solid #2c3e50;
+}
